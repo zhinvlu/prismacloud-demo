@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:24.10
 COPY wild.py /
 RUN  apt update -y && apt install python3-pip git curl wget  -y
 RUN pip3 --no-cache-dir install --upgrade awscli boto3
